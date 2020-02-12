@@ -16,6 +16,24 @@ body {
     text-shadow: 7px 5px 12px rgba(0,0,0,0.91);
 }
 
+.alerts {
+    /* width: 100%; */
+    position: relative;
+  }
+  
+  .alert {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    user-select: none;
+    animation: alert 5s forwards;
+  }
+
+  @keyframes alert {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
 
 .slideshow {
     position: fixed;

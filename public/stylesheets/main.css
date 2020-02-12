@@ -23,6 +23,12 @@ html {
   top: 5px;
   z-index: 100;
   user-select: none;
+  animation: alert 5s forwards;
+}
+
+@keyframes alert {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 
 #index .card img {
