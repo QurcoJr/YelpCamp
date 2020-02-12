@@ -1,0 +1,78 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+.delete-form {
+  display: inline;
+}
+
+.alerts {
+  /* width: 100%; */
+  position: relative;
+}
+
+.alert {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  z-index: 100;
+  user-select: none;
+}
+
+#index .card img {
+    height: 190px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: -0;
+  width: 100%;
+  background-color: #343a40;
+}
+
+footer a {
+    color: rgba(255,255,255,.5);
+}
+
+footer a:hover {
+    color: white;
+}
+
+#navigation {
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  #navigation {
+    top: 5%;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  #navigation h1 {
+    font-size: 1.5rem;
+  }
+  #navigaton p {
+    font-size: 0.3rem;
+  }
+  #navigation .btn {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 576px) { 
+    #index .card img {
+        height: auto;
+    }
+}
